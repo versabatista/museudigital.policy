@@ -43,6 +43,8 @@ setup(
         'plone.api',
         'setuptools',
         'z3c.jbot',
+        'museudigital.tema',
+        'museudigital.conteudos', 
     ],
     extras_require={
         'test': [
