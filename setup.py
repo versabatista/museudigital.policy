@@ -47,6 +47,7 @@ setup(
         'museudigital.conteudos', 
         'collective.cover',
         'plone.app.multilingual',
+        'plone.multilingualbehavior',
         'collective.navigationtoggle',
     ],
     extras_require={
