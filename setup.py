@@ -45,6 +45,9 @@ setup(
         'z3c.jbot',
         'museudigital.tema',
         'museudigital.conteudos', 
+        'collective.cover',
+        'plone.app.multilingual',
+        'collective.navigationtoggle',
     ],
     extras_require={
         'test': [
