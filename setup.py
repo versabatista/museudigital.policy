@@ -49,6 +49,7 @@ setup(
         'plone.app.multilingual',
         'plone.multilingualbehavior',
         'collective.navigationtoggle',
+        'aws.pdfbook',
     ],
     extras_require={
         'test': [
