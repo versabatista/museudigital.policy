@@ -45,7 +45,7 @@ setup(
         'z3c.jbot',
         'museudigital.tema',
         'museudigital.conteudos', 
-        'collective.cover',
+        'collective.cover==1.0a5',
         'plone.app.multilingual',
         'plone.multilingualbehavior',
         'collective.navigationtoggle',
