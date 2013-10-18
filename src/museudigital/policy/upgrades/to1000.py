@@ -14,7 +14,7 @@ def upgrade0to1000(context):
     """
     gtool = getToolByName(context, 'portal_groups')
 
-    gtool.addGroup('Soap', title='Soap Users', roles=roles_soap)
-
-    # create new group for soap admin
-    gtool.addGroup('Soap Admin', title='Soap Administrator', roles=roles_soap_admin)
+    gtool.addGroup('InclusaoImagens', title='Inclusão de Imagens', roles=['Inclusao de imagens'])
+    gtool.addGroup('RevisoresConteudo', title='Revisores de Conteúdo', roles=['Revisor de conteudo'])
+    gtool.addGroup('RevisoresConteudo', title='Revisores de Texto', roles=['Revisor de texto'])
+    gtool.addGroup('TradutoresTexto', title='Tradutores de texto', roles=['Tradutor de texto'])
