@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<contentrules>
+  <rule name="rule-1" title="Alerta por e-mail (revisar texto)" description=""
+        enabled="True" event="Products.CMFCore.interfaces.IActionSucceededEvent"
+        stop-after="False">
+    <conditions>
+      <condition type="plone.conditions.WorkflowTransition">
+        <property name="wf_transitions">
+          <element>revisar_texto</element>
+        </property>
+      </condition>
+    </conditions>
+    <actions>
+      <action type="plone.actions.Mail">
+        <property name="source"/>
+        <property name="message">Mensagem</property>
+        <property name="subject">Alteração do workflow</property>
+        <property name="recipients">${revisor_texto_emails}</property>
+        <property name="exclude_actor">False</property>
+      </action>
+    </actions>
+  </rule>
+  <rule name="rule-2" title="Alerta por e-mail (revisar conteúdo)"
+        description="" enabled="True"
+        event="Products.CMFCore.interfaces.IActionSucceededEvent"
+        stop-after="False">
+    <conditions>
+      <condition type="plone.conditions.WorkflowTransition">
+        <property name="wf_transitions">
+          <element>revisar_conteudo</element>
+        </property>
+      </condition>
+    </conditions>
+    <actions>
+      <action type="plone.actions.Mail">
+        <property name="source"/>
+        <property name="message">Mensagem</property>
+        <property name="subject">Alteração do workflow</property>
+        <property name="recipients">${revisor_conteudo_emails}</property>
+        <property name="exclude_actor">False</property>
+      </action>
+    </actions>
+  </rule>
+  <rule name="rule-3" title="Alerta por e-mail (traduzir texto)" description=""
+        enabled="True" event="Products.CMFCore.interfaces.IActionSucceededEvent"
+        stop-after="False">
+    <conditions>
+      <condition type="plone.conditions.WorkflowTransition">
+        <property name="wf_transitions">
+          <element>traduzir</element>
+        </property>
+      </condition>
+    </conditions>
+    <actions>
+      <action type="plone.actions.Mail">
+        <property name="source"/>
+        <property name="message">Mensagem</property>
+        <property name="subject">Alteração do workflow</property>
+        <property name="recipients">${tradutor_emails}</property>
+        <property name="exclude_actor">False</property>
+      </action>
+    </actions>
+  </rule>
+  <rule name="rule-4" title="Alerta por e-mail (incluir imagens)"
+        description="" enabled="True"
+        event="Products.CMFCore.interfaces.IActionSucceededEvent"
+        stop-after="False">
+    <conditions>
+      <condition type="plone.conditions.WorkflowTransition">
+        <property name="wf_transitions">
+          <element>incluir_imagens</element>
+        </property>
+      </condition>
+    </conditions>
+    <actions>
+      <action type="plone.actions.Mail">
+        <property name="source"/>
+        <property name="message">Mensagem</property>
+        <property name="subject">Alteração do workflow</property>
+        <property name="recipients">${inclusao_imagens_emails}</property>
+        <property name="exclude_actor">False</property>
+      </action>
+    </actions>
+  </rule>
+  <rule name="rule-5" title="Alerta por e-mail (voltar)" description=""
+        enabled="True" event="Products.CMFCore.interfaces.IActionSucceededEvent"
+        stop-after="False">
+    <conditions>
+      <condition type="plone.conditions.WorkflowTransition">
+        <property name="wf_transitions">
+          <element>voltar</element>
+        </property>
+      </condition>
+    </conditions>
+    <actions>
+      <action type="plone.actions.Mail">
+        <property name="source"/>
+        <property name="message">Mensagem</property>
+        <property name="subject">Alteração do workflow</property>
+        <property name="recipients">${owner_emails}</property>
+        <property name="exclude_actor">False</property>
+      </action>
+    </actions>
+  </rule>
+  <assignment name="rule-1" bubbles="True" enabled="True" location=""/>
+  <assignment name="rule-2" bubbles="True" enabled="True" location=""/>
+  <assignment name="rule-3" bubbles="True" enabled="True" location=""/>
+  <assignment name="rule-4" bubbles="True" enabled="True" location=""/>
+  <assignment name="rule-5" bubbles="True" enabled="True" location=""/>
+</contentrules>

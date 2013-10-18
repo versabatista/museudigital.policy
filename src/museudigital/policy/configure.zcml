@@ -30,4 +30,32 @@
 
     <i18n:registerTranslations directory="locales" />
 
+  <!-- adapters for content rules -->
+  <adapter
+      for="*"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".adapters.RevisorTextoEmailSubstitution"
+      name="revisor_texto_emails"
+      />
+
+  <adapter
+      for="*"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".adapters.RevisorConteudoEmailSubstitution"
+      name="revisor_conteudo_emails"
+      />
+
+  <adapter
+      for="*"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".adapters.TradutorEmailSubstitution"
+      name="tradutor_emails"
+      />
+
+  <adapter
+      for="*"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".adapters.InclusaoImagensEmailSubstitution"
+      name="inclusao_imagens_emails"
+      />
 </configure>
