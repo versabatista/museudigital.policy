@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rolemap>
+  <roles>
+    <role name="Revisor de texto"/>
+    <role name="Revisor de conteudo"/>
+    <role name="Tradutor de texto"/>
+    <role name="Inclusao de imagens"/>
+  </roles>
+  <permissions>
+  </permissions>
+</rolemap>
