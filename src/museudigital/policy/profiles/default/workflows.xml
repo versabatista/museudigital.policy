@@ -2,7 +2,6 @@
 <object name="portal_workflow" meta_type="Plone Workflow Tool">
  <property
     name="title">Contains workflow definitions for your portal</property>
- <object name="intranet_workflow" meta_type="Workflow"/>
  <object name="museu_frontend_workflow" meta_type="Workflow"/>
  <object name="museu_livro_centenario_workflow" meta_type="Workflow"/>
  <bindings>
