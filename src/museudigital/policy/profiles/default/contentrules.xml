@@ -103,7 +103,7 @@
     </actions>
   </rule>
 
-  <rule name="rule-1" title="Alerta por e-mail (revisar texto livro)" description=""
+  <rule name="rule-6" title="Alerta por e-mail (revisar texto livro)" description=""
         enabled="True" event="Products.CMFCore.interfaces.IActionSucceededEvent"
         stop-after="False">
     <conditions>
@@ -123,7 +123,7 @@
       </action>
     </actions>
   </rule>
-  <rule name="rule-2" title="Alerta por e-mail (revisar conteúdo livro)"
+  <rule name="rule-7" title="Alerta por e-mail (revisar conteúdo livro)"
         description="" enabled="True"
         event="Products.CMFCore.interfaces.IActionSucceededEvent"
         stop-after="False">
@@ -144,7 +144,7 @@
       </action>
     </actions>
   </rule>
-  <rule name="rule-3" title="Alerta por e-mail (traduzir texto livro)" description=""
+  <rule name="rule-8" title="Alerta por e-mail (traduzir texto livro)" description=""
         enabled="True" event="Products.CMFCore.interfaces.IActionSucceededEvent"
         stop-after="False">
     <conditions>
@@ -164,7 +164,7 @@
       </action>
     </actions>
   </rule>
-  <rule name="rule-4" title="Alerta por e-mail (incluir imagens livro)"
+  <rule name="rule-9" title="Alerta por e-mail (incluir imagens livro)"
         description="" enabled="True"
         event="Products.CMFCore.interfaces.IActionSucceededEvent"
         stop-after="False">
@@ -191,4 +191,8 @@
   <assignment name="rule-3" bubbles="True" enabled="True" location=""/>
   <assignment name="rule-4" bubbles="True" enabled="True" location=""/>
   <assignment name="rule-5" bubbles="True" enabled="True" location=""/>
+  <assignment name="rule-6" bubbles="True" enabled="True" location=""/>
+  <assignment name="rule-7" bubbles="True" enabled="True" location=""/>
+  <assignment name="rule-8" bubbles="True" enabled="True" location=""/>
+  <assignment name="rule-9" bubbles="True" enabled="True" location=""/>
 </contentrules>
