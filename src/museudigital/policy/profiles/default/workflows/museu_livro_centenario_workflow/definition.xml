@@ -5,7 +5,7 @@
   <permission>Modify portal content</permission>
   <permission>View</permission>
   <state state_id="criado" title="Criado" >
-    <exit-transition transition_id="revisar_texto" />
+    <exit-transition transition_id="revisar_texto_livro" />
     <permission-map name="Access contents information" acquired="False">
       <permission-role>Contributor</permission-role>
       <permission-role>Editor</permission-role>
@@ -111,8 +111,8 @@
 
   </state>
   <state state_id="revisando_conteudo" title="Revisando conteúdo" >
-    <exit-transition transition_id="revisar_texto" />
-    <exit-transition transition_id="traduzir" />
+    <exit-transition transition_id="revisar_texto_livro" />
+    <exit-transition transition_id="traduzir_livro" />
     <exit-transition transition_id="voltar" />
     <permission-map name="Access contents information" acquired="False">
       <permission-role>Contributor</permission-role>
@@ -150,7 +150,7 @@
 
   </state>
   <state state_id="revisando_texto" title="Revisando texto" >
-    <exit-transition transition_id="revisar_conteudo" />
+    <exit-transition transition_id="revisar_conteudo_livro" />
     <permission-map name="Access contents information" acquired="False">
       <permission-role>Contributor</permission-role>
       <permission-role>Editor</permission-role>
@@ -187,7 +187,7 @@
 
   </state>
   <state state_id="traduzindo" title="Traduzindo" >
-    <exit-transition transition_id="incluir_imagens" />
+    <exit-transition transition_id="incluir_imagens_livro" />
     <permission-map name="Access contents information" acquired="False">
       <permission-role>Contributor</permission-role>
       <permission-role>Editor</permission-role>
@@ -223,29 +223,29 @@
 
 
   </state>
-  <transition transition_id="incluir_imagens" title="Incluir imagens" new_state="incluindo_imagens" trigger="USER" before_script="" after_script="" >
-    <action url="%(content_url)s/content_status_modify?workflow_action=incluir_imagens" category="workflow" icon="">Incluir imagens</action>
+  <transition transition_id="incluir_imagens_livro" title="Incluir imagens" new_state="incluindo_imagens" trigger="USER" before_script="" after_script="" >
+    <action url="%(content_url)s/content_status_modify?workflow_action=incluir_imagens_livro" category="workflow" icon="">Incluir imagens</action>
     <guard >
       <guard-permission>Modify portal content</guard-permission>
     </guard>
 
   </transition>
-  <transition transition_id="publicar_internamente" title="Publicar internamente" new_state="publicado_internamente" trigger="USER" before_script="" after_script="" >
-    <action url="%(content_url)s/content_status_modify?workflow_action=publicar_internamente" category="workflow" icon="">Publicar internamente</action>
+  <transition transition_id="publicar_internamente_livro" title="Publicar internamente" new_state="publicado_internamente" trigger="USER" before_script="" after_script="" >
+    <action url="%(content_url)s/content_status_modify?workflow_action=publicar_internamente_livro" category="workflow" icon="">Publicar internamente</action>
     <guard >
       <guard-permission>Modify portal content</guard-permission>
     </guard>
 
   </transition>
-  <transition transition_id="revisar_conteudo" title="Revisar conteúdo" new_state="revisando_conteudo" trigger="USER" before_script="" after_script="" >
-    <action url="%(content_url)s/content_status_modify?workflow_action=revisar_conteudo" category="workflow" icon="">Revisar conteúdo</action>
+  <transition transition_id="revisar_conteudo_livro" title="Revisar conteúdo" new_state="revisando_conteudo" trigger="USER" before_script="" after_script="" >
+    <action url="%(content_url)s/content_status_modify?workflow_action=revisar_conteudo_livro" category="workflow" icon="">Revisar conteúdo</action>
     <guard >
       <guard-permission>Modify portal content</guard-permission>
     </guard>
 
   </transition>
-  <transition transition_id="revisar_texto" title="Revisar texto" new_state="revisando_texto" trigger="USER" before_script="" after_script="" >
-    <action url="%(content_url)s/content_status_modify?workflow_action=revisar_texto" category="workflow" icon="">Revisar texto</action>
+  <transition transition_id="revisar_texto_livro" title="Revisar texto" new_state="revisando_texto" trigger="USER" before_script="" after_script="" >
+    <action url="%(content_url)s/content_status_modify?workflow_action=revisar_texto_livro" category="workflow" icon="">Revisar texto</action>
     <guard >
       <guard-permission>Modify portal content</guard-permission>
     </guard>
@@ -259,8 +259,8 @@
     </guard>
 
   </transition>
-  <transition transition_id="traduzir" title="Traduzir" new_state="traduzindo" trigger="USER" before_script="" after_script="" >
-    <action url="%(content_url)s/content_status_modify?workflow_action=traduzir" category="workflow" icon="">Traduzir</action>
+  <transition transition_id="traduzir_livro" title="Traduzir" new_state="traduzindo" trigger="USER" before_script="" after_script="" >
+    <action url="%(content_url)s/content_status_modify?workflow_action=traduzir_livro" category="workflow" icon="">Traduzir</action>
     <guard >
       <guard-permission>Modify portal content</guard-permission>
     </guard>

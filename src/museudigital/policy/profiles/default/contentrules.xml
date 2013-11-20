@@ -102,6 +102,90 @@
       </action>
     </actions>
   </rule>
+
+  <rule name="rule-1" title="Alerta por e-mail (revisar texto livro)" description=""
+        enabled="True" event="Products.CMFCore.interfaces.IActionSucceededEvent"
+        stop-after="False">
+    <conditions>
+      <condition type="plone.conditions.WorkflowTransition">
+        <property name="wf_transitions">
+          <element>revisar_texto_livro</element>
+        </property>
+      </condition>
+    </conditions>
+    <actions>
+      <action type="plone.actions.Mail">
+        <property name="source"/>
+        <property name="message">Mensagem</property>
+        <property name="subject">Alteração do workflow</property>
+        <property name="recipients">${revisor_texto_livro_emails}</property>
+        <property name="exclude_actor">False</property>
+      </action>
+    </actions>
+  </rule>
+  <rule name="rule-2" title="Alerta por e-mail (revisar conteúdo livro)"
+        description="" enabled="True"
+        event="Products.CMFCore.interfaces.IActionSucceededEvent"
+        stop-after="False">
+    <conditions>
+      <condition type="plone.conditions.WorkflowTransition">
+        <property name="wf_transitions">
+          <element>revisar_conteudo_livro</element>
+        </property>
+      </condition>
+    </conditions>
+    <actions>
+      <action type="plone.actions.Mail">
+        <property name="source"/>
+        <property name="message">Mensagem</property>
+        <property name="subject">Alteração do workflow</property>
+        <property name="recipients">${revisor_conteudo_livro_emails}</property>
+        <property name="exclude_actor">False</property>
+      </action>
+    </actions>
+  </rule>
+  <rule name="rule-3" title="Alerta por e-mail (traduzir texto livro)" description=""
+        enabled="True" event="Products.CMFCore.interfaces.IActionSucceededEvent"
+        stop-after="False">
+    <conditions>
+      <condition type="plone.conditions.WorkflowTransition">
+        <property name="wf_transitions">
+          <element>traduzir_livro</element>
+        </property>
+      </condition>
+    </conditions>
+    <actions>
+      <action type="plone.actions.Mail">
+        <property name="source"/>
+        <property name="message">Mensagem</property>
+        <property name="subject">Alteração do workflow</property>
+        <property name="recipients">${tradutor_livro_emails}</property>
+        <property name="exclude_actor">False</property>
+      </action>
+    </actions>
+  </rule>
+  <rule name="rule-4" title="Alerta por e-mail (incluir imagens livro)"
+        description="" enabled="True"
+        event="Products.CMFCore.interfaces.IActionSucceededEvent"
+        stop-after="False">
+    <conditions>
+      <condition type="plone.conditions.WorkflowTransition">
+        <property name="wf_transitions">
+          <element>incluir_imagens_livro</element>
+        </property>
+      </condition>
+    </conditions>
+    <actions>
+      <action type="plone.actions.Mail">
+        <property name="source"/>
+        <property name="message">Mensagem</property>
+        <property name="subject">Alteração do workflow</property>
+        <property name="recipients">${inclusao_imagens_livro_emails}</property>
+        <property name="exclude_actor">False</property>
+      </action>
+    </actions>
+  </rule>
+
   <assignment name="rule-1" bubbles="True" enabled="True" location=""/>
   <assignment name="rule-2" bubbles="True" enabled="True" location=""/>
   <assignment name="rule-3" bubbles="True" enabled="True" location=""/>
