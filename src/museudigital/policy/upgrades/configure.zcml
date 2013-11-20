@@ -15,4 +15,12 @@
       handler="museudigital.policy.upgrades.to1000.upgrade0to1000"
       profile="museudigital.policy:default" />
 
+  <genericsetup:upgradeStep
+      title="Upgrade for museudigital.policy 0.2"
+      description="Initial upgrade step"
+      source="1000"
+      destination="1001"
+      sortkey="2"
+      handler="museudigital.policy.upgrades.to1000.upgrade1000to1001"
+      profile="museudigital.policy:default" />
 </configure>
