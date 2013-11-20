@@ -43,7 +43,7 @@
     <permission-map name="Access contents information" acquired="False">
       <permission-role>Contributor</permission-role>
       <permission-role>Editor</permission-role>
-      <permission-role>Inclusao de imagens</permission-role>
+      <permission-role>Inclusao de imagens livro</permission-role>
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
       <permission-role>Reader</permission-role>
@@ -51,14 +51,14 @@
     </permission-map>
     <permission-map name="Change portal events" acquired="False">
       <permission-role>Editor</permission-role>
-      <permission-role>Inclusao de imagens</permission-role>
+      <permission-role>Inclusao de imagens livro</permission-role>
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
       <permission-role>Site Administrator</permission-role>
     </permission-map>
     <permission-map name="Modify portal content" acquired="False">
       <permission-role>Editor</permission-role>
-      <permission-role>Inclusao de imagens</permission-role>
+      <permission-role>Inclusao de imagens livro</permission-role>
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
       <permission-role>Site Administrator</permission-role>
@@ -66,7 +66,7 @@
     <permission-map name="View" acquired="False">
       <permission-role>Contributor</permission-role>
       <permission-role>Editor</permission-role>
-      <permission-role>Inclusao de imagens</permission-role>
+      <permission-role>Inclusao de imagens livro</permission-role>
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
       <permission-role>Reader</permission-role>
@@ -120,21 +120,21 @@
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
       <permission-role>Reader</permission-role>
-      <permission-role>Revisor de conteudo</permission-role>
+      <permission-role>Revisor de conteudo livro</permission-role>
       <permission-role>Site Administrator</permission-role>
     </permission-map>
     <permission-map name="Change portal events" acquired="False">
       <permission-role>Editor</permission-role>
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
-      <permission-role>Revisor de conteudo</permission-role>
+      <permission-role>Revisor de conteudo livro</permission-role>
       <permission-role>Site Administrator</permission-role>
     </permission-map>
     <permission-map name="Modify portal content" acquired="False">
       <permission-role>Editor</permission-role>
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
-      <permission-role>Revisor de conteudo</permission-role>
+      <permission-role>Revisor de conteudo livro</permission-role>
       <permission-role>Site Administrator</permission-role>
     </permission-map>
     <permission-map name="View" acquired="False">
@@ -143,7 +143,7 @@
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
       <permission-role>Reader</permission-role>
-      <permission-role>Revisor de conteudo</permission-role>
+      <permission-role>Revisor de conteudo livro</permission-role>
       <permission-role>Site Administrator</permission-role>
     </permission-map>
 
@@ -157,21 +157,21 @@
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
       <permission-role>Reader</permission-role>
-      <permission-role>Revisor de texto</permission-role>
+      <permission-role>Revisor de texto livro</permission-role>
       <permission-role>Site Administrator</permission-role>
     </permission-map>
     <permission-map name="Change portal events" acquired="False">
       <permission-role>Editor</permission-role>
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
-      <permission-role>Revisor de texto</permission-role>
+      <permission-role>Revisor de texto livro</permission-role>
       <permission-role>Site Administrator</permission-role>
     </permission-map>
     <permission-map name="Modify portal content" acquired="False">
       <permission-role>Editor</permission-role>
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
-      <permission-role>Revisor de texto</permission-role>
+      <permission-role>Revisor de texto livro</permission-role>
       <permission-role>Site Administrator</permission-role>
     </permission-map>
     <permission-map name="View" acquired="False">
@@ -180,7 +180,7 @@
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
       <permission-role>Reader</permission-role>
-      <permission-role>Revisor de texto</permission-role>
+      <permission-role>Revisor de texto livro</permission-role>
       <permission-role>Site Administrator</permission-role>
     </permission-map>
 
@@ -195,21 +195,21 @@
       <permission-role>Owner</permission-role>
       <permission-role>Reader</permission-role>
       <permission-role>Site Administrator</permission-role>
-      <permission-role>Tradutor de texto</permission-role>
+      <permission-role>Tradutor de texto livro</permission-role>
     </permission-map>
     <permission-map name="Change portal events" acquired="False">
       <permission-role>Editor</permission-role>
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
       <permission-role>Site Administrator</permission-role>
-      <permission-role>Tradutor de texto</permission-role>
+      <permission-role>Tradutor de texto livro</permission-role>
     </permission-map>
     <permission-map name="Modify portal content" acquired="False">
       <permission-role>Editor</permission-role>
       <permission-role>Manager</permission-role>
       <permission-role>Owner</permission-role>
       <permission-role>Site Administrator</permission-role>
-      <permission-role>Tradutor de texto</permission-role>
+      <permission-role>Tradutor de texto livro</permission-role>
     </permission-map>
     <permission-map name="View" acquired="False">
       <permission-role>Contributor</permission-role>
@@ -218,7 +218,7 @@
       <permission-role>Owner</permission-role>
       <permission-role>Reader</permission-role>
       <permission-role>Site Administrator</permission-role>
-      <permission-role>Tradutor de texto</permission-role>
+      <permission-role>Tradutor de texto livro</permission-role>
     </permission-map>
 
 

@@ -50,6 +50,7 @@ setup(
         'plone.multilingualbehavior',
         'collective.navigationtoggle',
         'aws.pdfbook',
+        'redturtle.video',
     ],
     extras_require={
         'test': [

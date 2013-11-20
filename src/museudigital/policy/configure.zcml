@@ -59,4 +59,32 @@
       factory=".adapters.InclusaoImagensEmailSubstitution"
       name="inclusao_imagens_emails"
       />
+
+  <adapter
+      for="*"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".adapters.RevisorTextoLivroEmailSubstitution"
+      name="revisor_texto_livro_emails"
+      />
+
+  <adapter
+      for="*"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".adapters.RevisorConteudoLivroEmailSubstitution"
+      name="revisor_conteudo_livro_emails"
+      />
+
+  <adapter
+      for="*"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".adapters.TradutorLivroEmailSubstitution"
+      name="tradutor_livro_emails"
+      />
+
+  <adapter
+      for="*"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".adapters.InclusaoImagensLivroEmailSubstitution"
+      name="inclusao_imagens_livro_emails"
+      />
 </configure>

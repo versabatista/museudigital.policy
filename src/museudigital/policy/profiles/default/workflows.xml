@@ -11,7 +11,9 @@
   <type type_id="Acervo">
    <bound-workflow workflow_id="museu_frontend_workflow"/>
   </type>
-  <type type_id="Capitulo"/>
+  <type type_id="Capitulo">
+   <bound-workflow workflow_id="museu_livro_centenario_workflow"/>
+  </type>
   <type type_id="Livro">
    <bound-workflow workflow_id="museu_livro_centenario_workflow"/>
   </type>

@@ -5,6 +5,10 @@
     <role name="Revisor de conteudo"/>
     <role name="Tradutor de texto"/>
     <role name="Inclusao de imagens"/>
+    <role name="Revisor de texto livro"/>
+    <role name="Revisor de conteudo livro"/>
+    <role name="Tradutor de texto livro"/>
+    <role name="Inclusao de imagens livro"/>
   </roles>
   <permissions>
   </permissions>
